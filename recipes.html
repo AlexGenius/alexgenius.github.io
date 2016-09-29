@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        nav.navbar-inverse{
+            border: none;   
+            box-shadow: 0px 0px 1px 2px #16a085;
+            background: #1abc9c;
+            color: white !important;
+        }
+        nav.navbar-inverse li.active a{
+            background: #16a085 !important;
+        }
+        nav.navbar-inverse *{
+            color: white !important;
+        }
+        ul.dropdown-menu *{
+            color: black !important;
+        }
+        div.p-options{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.p-item{
+            display: inline-block;
+            height: 60px;
+            width: 120px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .p-opt-prev{
+            float: left;
+        }
+        .p-opt-next{
+            float: left;
+        }
+        .affix{
+            top:0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Yumy !</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact with us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <p class="navbar-text">Powered by <a href="">Prouid</a></p>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    
+    <div class="p-options">
+        <a class="p-opt-prev">❰</a>
+        <div class="p-items">
+            <div class="p-item">food</div>
+            <div class="p-item">food</div>
+            <div class="p-item">food</div>
+            <div class="p-item">food</div>
+            <div class="p-item">food</div>
+        </div>
+        <a class="p-opt-next">❱</a>
+    </div>
+    <div>
+        <div class="col-sm-4" style="display:flex;justify-content:center;">
+            <div>
+                <img src="images/card.jpg">
+                <h3 class="text-center">hello</h3>
+            </div>
+        </div>
+        <div class="col-sm-4" style="display:flex;justify-content:center;">FIRSTDIVV</div>
+        <div class="col-sm-4" style="display:flex;justify-content:center;">FIRSTDIVV</div>
+        <div class="col-sm-4" style="display:flex;justify-content:center;">FIRSTDIVV</div>
+        <div class="col-sm-4" style="display:flex;justify-content:center;">FIRSTDIVV</div>
+    </div>
+    <!-- Body -->
+    <script src="jquery/jquery-3.0.0.min.js">
+    </script>
+    <script src="jquery/jquery-migrate-3.0.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="javascript/go-come.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

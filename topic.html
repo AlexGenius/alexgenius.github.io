@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+         <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            html,body{
+                height: 100%;
+                width: 100vh;
+                overflow: hidden;
+            }
+            section{
+                border-radius: 10px;
+                width: 100vh;
+            }
+             #float-prouid-opt{
+                position: fixed;
+                top: 40%;
+                right: 20px;
+                transition: 1s;
+            }
+            
+            #float-prouid-opt ul{
+                margin: 0;
+                list-style-type: none;
+            }
+            #float-prouid-opt ul li{
+                
+            }
+            #float-prouid-opt ul a{
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                margin: 10px;
+                padding: 5px;
+                font:20px arial;
+                transition: box-shadow .31s ease;
+                color:rgba(22,160,133 ,1);
+            }
+            #float-prouid-opt ul li a:hover{
+                box-shadow: 0px 0px 2px 2px rgba(52,152,219 ,1);
+            }
+            #float-prouid-opt ul li.active a{
+                text-shadow: 0px 0px 3px #2ecc71;
+                color: #2c3e50;
+            }
+            a.hide-btn{
+                position: absolute;
+                top:40%;
+                transition: 2s ease-in-out;
+                color: white;
+                border:2px solid ;
+                border-radius: 50%;
+                background-color: rgba(127,140,141 ,.9);
+                text-decoration: none;
+                text-align: center;
+                padding: 10px 13px;
+                font-weight: bolder;
+                font-size: 19px
+            }
+            div.hide-opt a.hide-btn{
+                transform: rotateY(180deg);
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="prouid-nav">
+            <ul class="prouid-item-list">
+                <li class="active"><a href="index.html" class="prouid-logo">Home</a></li><li><a href="#">Recipes</a></li><li><a href="#">Contact us</a></li>
+            </ul>
+        </div><!-- navbar -->
+        
+        <div id="float-prouid-opt">
+            <a href="#" class="hide-btn">≫</a>
+            <ul class="p-opt-list">
+                <li class="p-item active"><a href="#">Description</a></li>
+                <li class="p-item"><a href="#">Quantities</a></li>
+                <li class="p-item"><a href="#">Steps</a></li>
+                <li class="p-item"><a href="#">Comments</a></li>
+            </ul>
+        </div>
+        <div>
+            <section class="active"><div class="col-md-6 col-md-offset-3">1</div></section>
+            <section><div class="col-md-6 col-md-offset-3">2</div></section>
+            <section><div class="col-md-6 col-md-offset-3">3</div></section>
+            <section><div class="col-md-6 col-md-offset-3">4</div></section>
+        </div>
+        
+        
+        
+        <!-- Body -->
+        <script src="jquery/jquery-3.0.0.min.js">
+        </script>
+        <script src="jquery/jquery-migrate-3.0.0.min.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="javascript/scrollspy.js"></script>
+        <script>
+        
+        </script>
+    </body>
+</html>
