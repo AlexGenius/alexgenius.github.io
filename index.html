@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+         <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body,html{
+                background-image: url("images/food.png");
+                background-attachment: fixed;
+                overflow: visible;
+            }
+            .info-center{
+                height: 100vh;
+                text-align: center;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100%;
+            }
+            p{
+                font-size: 24px;
+                line-height: 40px;
+                font-weight: bold;
+                color:dimgrey; 
+                margin: 50px 0;
+            }
+            a.s-btn{
+                font-size: 25px;
+                font-family: fantasy;
+                font-weight: 900;
+                text-decoration: none;
+                color:#ffffff;
+                background-color: greenyellow;
+                border-radius: 3px 10px;
+                padding: 20px 10px;
+                transition: .3s ease-out;
+            }
+            a.s-btn:hover{
+                background-color: crimson;
+                box-shadow: 0px 0px 1px 2px gray;
+            }
+            a.s-btn:active{
+                box-shadow: 0px 0px 3px 6px gray;
+            }
+            a.upArrow{
+                position: absolute;
+                bottom: 0;
+                font-size: 40px;
+                text-decoration: none;
+                border-radius: 50%;
+                color: black;
+            }
+            a.upArrow:hover{
+                color: blueviolet
+            }
+            a.upArrow:active{
+                color: aliceblue;
+            }
+            div.pop{
+                position: fixed;
+                top:-100%;
+                background-color: rgba(233,220,241,0.9);
+                transition: .3s;
+                width: 100%;
+                display: flex;
+                 text-align: center;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100%;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#" style="position:fixed;top:10px;left:10px;color:white;font-size:15px;z-index:2;text-decoration:none;text-shadow:0px 0px 2px black;">Powered by Prouid</a>
+        <div class="prouid-nav">
+            <ul class="prouid-item-list">
+                <li class="active"><a href="index.html" class="prouid-logo">Home</a></li><li><a href="#">Recipes</a></li><li><a href="#">Contact us</a></li>
+            </ul>
+        </div><!-- navbar -->
+        <div class="info-center col-sm-8 col-sm-offset-2">
+            <div>
+            <p class="info">Hello and welcome to our site <br>Here and only Here you will find all the food recipes you need to make your home happier or may be to servive for singles :D <br><span class="text-warning">Note : All the food recipes are from good cheifs and tested too !  </span></p>
+            <a href="#" class="s-btn">Start cooking</a>
+            
+            </div>
+        </div>
+        
+        <div class="info-center col-sm-8 col-sm-offset-2">
+            <div>
+            <div class="form-group">
+                <label for="nName">Nick name:</label>
+                <input type="text" class="form-control" id="nName">
+            </div>
+            <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+                <a href="#" class="upArrow">✔</a>
+            </div>
+        </div>
+        <div class="info-center col-sm-8 col-sm-offset-2">
+            <div>
+            <div class="form-group">
+                <label for="nName">What are your favourite types of food:</label>
+                <select class="form-control" id="food-type">
+                    <option value="0">select</option>
+                    <option value="1">crispy</option>
+                    <option value="2"></option>
+                </select>
+                <br>
+                <a href="javascript:void(0)" class="upArrow pop" onclick="hi()">✔</a>
+            </div>
+            </div>
+        </div>
+         <div class="pop">
+             <div>
+                    <div class="form-group">
+                        <label for="pass">Set a password:</label>
+                            <input type="password" class="form-control" id="pass">
+                    </div>
+                 <br>
+             <a href="javascript:void(0)" class="s-btn">YUMY !</a>  <a href="index.html">reset</a>
+                </div>
+        </div>
+        
+        <!-- Body -->
+        <script src="jquery/jquery-3.0.0.min.js">
+        </script>
+        <script src="jquery/jquery-migrate-3.0.0.min.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("a.pop").click(function(){
+                    $("div.pop").css("top","0%");
+                });
+            });
+        </script>
+    </body>
+</html>
